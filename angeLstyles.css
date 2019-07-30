@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.topnav-right {
+  float: none;
+}
+.navlink {
+   display: flex;
+   justify-content: center;
+
+}
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.angemiri {
+  font-family: 'Indie Flower', cursive;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.merch{
+  margin: 0 5px;
+}
+
+.merch:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  /* max-width: 300px; */
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #9D1027;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+    background-color: #B03F52;
+}
+
+.dec a {
+  text-decoration: none;
+  color: white;
+}
+
+.dec ul {
+  text-align: left;
+}
+
+.deku a {
+  text-decoration: none;
+  color: white;
+}
+
+.bakugou ul {
+  text-align: left;
+}
+
+.bakugou a {
+  text-decoration: none;
+  color: white;
+}
+
+.todoroki a {
+  text-decoration: none;
+  color: white;
+}
+
+.uraraka a {
+  text-decoration: none;
+  color: white;
+}
+/*
+.aniShirt2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: left;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.aniShirt2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.aniShirt2 button:hover {
+  opacity: 0.7;
+} */
+
+
+
+
+
+/* TJ */
+/* font-family: 'Indie Flower', cursive; */
+
+ /* url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap'); */
+
+ /*  background*/
+body {
+
+background:-webkit-linear-gradient(0deg, rgba(255,0,51,1) 0%, rgba(255,102,51,1) 41%, rgba(255,109,51,1) 45%, rgba(255,204,51,1) 99%, rgba(255,204,51,1) 100%);
+background:-o-linear-gradient(0deg, rgba(255,0,51,1) 0%, rgba(255,102,51,1) 41%, rgba(255,109,51,1) 45%, rgba(255,204,51,1) 99%, rgba(255,204,51,1) 100%);
+background:-moz-linear-gradient(0deg, rgba(255,0,51,1) 0%, rgba(255,102,51,1) 41%, rgba(255,109,51,1) 45%, rgba(255,204,51,1) 99%, rgba(255,204,51,1) 100%);
+background:linear-gradient(0deg, rgba(255,0,51,1) 0%, rgba(255,102,51,1) 41%, rgba(255,109,51,1) 45%, rgba(255,204,51,1) 99%, rgba(255,204,51,1) 100%);
+}
+
+
+
+ /*  */
+
+
+ ::selection { /highlighting system /
+  color: white;
+  background: #FFF2CD
+;
+ }
+
+
+/*search bar  */
+.topnavs input[type=text] {
+  padding:10px;
+  margin-top:10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  height: 40px;
+
+}
+
+.searchButton {
+  width: 35px;
+  height: 33px;
+  border:none;
+  background: #9D1027;
+  text-align: center;
+  color: #fff;
+  border-radius:50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .topnavs .search-container {
+    float: none;
+  }
+  .topnavs a, .topnavs input[type=text], .topnavs .search-container button {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin: 0;
+    padding: 0px;
+  }
+  .topnavs input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/*  search */
+
+
+
+
+
+#mbtn{
+  border-radius: 50%;
+  border-color: black;
+}
+
+/* emily */
+.dropbtn {
+  height: 40px;
+  width: 40px;
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding-left: 10px;
+  background: url(hamb1.png);
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #FFCC33;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ffdf80;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background: url(hamb2.png);}
+
+/* this is solely for the images */
+.centerr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+#mainweb {
+  display: flex;
+}
+
+
+#logoPic{
+    border-radius: 50%;
+    border: 5px solid;
+    border-color:black;
+
+}
+
+#logo {
+    flex: 0 0 15%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    border: none;
+}
+
+#name {
+  flex: 0 0 47%;
+  color: black;
+  border-radius: :25px;
+  font-size: 40px;
+  height: 150px;
+  margin-top: 10px
+  background-color: red;
+
+}
+h1{
+  font-family: 'Indie Flower', cursive;
+  color: #0B0000;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#search {
+  flex: 0 0 26%;
+  color: black;
+  width: auto;
+  padding: 0px;
+  margin-top: 15px;
+  margin-right: none;
+}
+
+
+#menu {
+  flex: 0 0 10%;
+  color: black;
+  width: 10px;
+  height: 40px;
+  padding:10px;
+  margin-left:2px;
+  margin-top:10px;
+}
+
+
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+#cred{
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+}
+
+#tj{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+#an{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+#em{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+#bar {
+  border-radius: 25px;
+}
+
+
+/*  */
