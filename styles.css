@@ -423,7 +423,6 @@ h1{
   #poll{
     flex: 88%;
     color: black;
-    background-color: purple;
     border-radius: 25px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -433,7 +432,6 @@ h1{
   #forum {
     flex: 88%;
     color: black;
-    background-color: purple;
     border-radius: 25px;
     margin-bottom: 5px;
     margin-left: 5px;
