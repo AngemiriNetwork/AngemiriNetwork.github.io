@@ -45,18 +45,18 @@ function showSlides(n) {
 var slideIndex = 2;
 showSlides1(slideIndex);
 
-function plusSlides(n) {
+function plusSlides1(n) {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+function currentSlide1(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides1(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides1");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot1");
   if (n > slides.length) {slideIndex = 2}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
