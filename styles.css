@@ -238,6 +238,10 @@ img {vertical-align: middle;}
 .mySlides {
   display: none;
 }
+
+.mySlides1 {
+  display: block;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
