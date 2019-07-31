@@ -363,7 +363,7 @@ img {vertical-align: middle;}
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 800px;
 }
 
 /* code for the tabs */
@@ -521,7 +521,7 @@ img {vertical-align: middle;}
   font-size: 40px;
   height: 150px;
   margin-top: 10px
-  background-color: red;
+
 
 }
 h1{
@@ -574,7 +574,7 @@ h1{
 #credits {
   flex: 0 0 13%;
   background-color: #9D1027;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
   border: none;
   border-color:none;
   width: auto;
