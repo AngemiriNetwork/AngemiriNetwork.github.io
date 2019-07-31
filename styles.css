@@ -240,7 +240,7 @@ img {vertical-align: middle;}
 }
 
 .mySlides1 {
-  display: block;
+  display: none;
 }
 /* Next & previous buttons */
 .prev, .next {
