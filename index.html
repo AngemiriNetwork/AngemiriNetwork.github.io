@@ -9,7 +9,10 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-<link id="ivon" rel="icon" href="lisa.jpg">
+<link id="ivon" rel="icon" href="angemiri.png">
+<script src="main.js"> </script>
+<script src="question.js"> </script>
+
 </head>
 
 
@@ -23,7 +26,7 @@
 
 <div id="mainweb" class= "center">
 <div id="logo" class="center">
-  <img id="logoPic" src="lisa.jpg" style="height:200px;">
+  <img id="logoPic" src="angemiri.png" style="height:200px;">
 
 </div>
 
@@ -31,7 +34,7 @@
   <h1 class="center">Angemiri Network</h1>
 </div>
 
-<div id ="search" class="right topnavs">
+<div id ="search_top" class="right topnavs">
 <form action="/action_page.php">
   <input type="text" placeholder="Search.." name="search" style="color:#FFDF80">
   <button type="submit" class="searchButton topnavs"><i class="fa fa-search"></i></button>
@@ -57,7 +60,7 @@
        <a href="japan.html">Japan</a>
        <a href="angelindex.html">Merch</a>
        <a href="polls.html">Polls</a>
-       <a href="http://pub4.bravenet.com/forum/287229533/">Forum</a>
+       <a href="forums.html">Forum</a>
 
    </div>
  </div>
@@ -69,55 +72,35 @@
 
 <div id="pair" class="center">
 <div id="rec" class="center">
+  <p>Recomendations:</p>
+  <div class="slideshow-container">
+    <div class="mySlides1 fade">
+      <img src="recomendation4.jfif" class="middle" style="width:30%">
+    </div>
 
+    <div class="mySlides1 fade">
+      <img src="recomendation2.jpg" class="middle" style="width:30%">
+    </div>
 
-<div class="slideshowcontainer">
+    <div class="mySlides1 fade">
+      <img src="recomendation3.jpg" class="middle" style="width:30%">
+    </div>
 
-<div class="mySlides1 fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="prototypeimg1.jpg" style="width:100%" class="centerr">
-  <div class="text">Caption Text</div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
 </div>
-
-<div class="mySlides1 fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="prototypeimg2.jpg" style="width:100%" class="centrr">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides1 fade">
-  <div class="numbertext">3 / 3</div>5
-  <img src="prototypeimg4.jpg" style="width:100%" class="centerr">
-  <div class="text">Caption Three</div>
-</div>
-
-<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot1" onclick="currentSlide1(1)"></span> 
-  <span class="dot1" onclick="currentSlide1(2)"></span> 
-  <span class="dot1" onclick="currentSlide1(3)"></span> 
-</div>
-</div>
-
 
 
 <div id="credits" class="center">
   <a id="cred" href="" >credits</button><br>
 
   <a  id="tj" href="https://www.instagram.com/tejibomb/?hl=en" target="_blank">Tejibomb</a><br>
-  <img src="tj.png" style="height:100px; width: auto; border-radius:25px;">
   <a  id="an" href="https://www.instagram.com/angelic_kitsune/?hl=en" target="_blank">angelic_kitsune</a><br>
-  <img src="angel.jpg" style="height:100px; width: auto; border-radius:25px;">
+  <img src="angel.jpg" style="height:100px; border-radius:25px;">
   <a  id="em" href="https://www.instagram.com/imotoxsan/?hl=en" target="_blank">imotoxsan</a><br>
-  <img src="em.png" style="height:100px; width: auto; border-radius:25px;">
 </div>
 </div>
-
 
 
 <div id= "bar">
@@ -130,98 +113,59 @@
    </div>
   <script type="text/javascript">
 
-  </script>
-  <div id="List" class="tabcontent center">
+  </script> <div id="List" class="tabcontent center">
      <h3>List</h3>
-     <p>London is the capital city of England.</p>
+     <p> Type here to look for genres of animes! </p>
+     <div class="topnavs">
+     <!-- <form action="/action_page.php"> -->
+       <input type="search" id="search" placeholder="Search.." name="search" style="color:#FFDF80">
+       <button type="submit" class="searchButton topnavs" onclick="makeAnimeRequest()"><i class="fa fa-search"></i></button>
+       <!-- <button onclick="test()"> d </button> -->
+     <!-- </form> -->
+     <p id="apiresponses"></p>
+     </div>
+     <script src="question.js"></script>
+
+
+
+
+   </div>
+   <div id="News" class="tabcontent">
+     <p>News:</p>
+     <div class="slideshow-container">
+       <div class="mySlides2 fade">
+         <img src="wwynews2.jpg" class="middle" style="width:30%">
+       </div>
+
+       <div class="mySlides2 fade">
+         <img src="mhamovieheroesrising.png" class="middle" style="width:30%">
+       </div>
+
+       <div class="mySlides2 fade">
+         <img src="rotshnews1.jpg" class="middle" style="width:30%">
+       </div>
+
+       <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+     </div>
+     <script src="main.js"></script>
+
+     <br>
+     <!-- The dots/circles -->
+     <!-- <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+       <span class="dot" onclick="currentSlide(3)"></span>
+     </div> -->
+     <!-- <p>Paris is the capital of France.</p> -->
    </div>
 
-   <div id="News" class="tabcontent center">
-     <h3 class="center">News</h3>
-<div class="slideshowcontainer">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="prototypeimg1.jpg" style="width:100%" class="centerr">
-  <div class="text">Caption Text</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="prototypeimg2.jpg" style="width:100%" class="centrr">
-  <div class="text">Caption Two</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>5
-  <img src="prototypeimg4.jpg" style="width:100%" class="centerr">
-  <div class="text">Caption Three</div>
-</div>
-
-<!-- <a class="prev slideshow-container center" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next slideshow-container center" onclick="plusSlides(1)">&#10095;</a>
- -->
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-      <!-- start sw-rss-feed code --> 
-<!-- start sw-rss-feed code --> 
-<script type="text/javascript"> 
-
-rssfeed_url = new Array(); 
-rssfeed_url[0]="https://surfing-waves.com/newsrss.xml";  
-rssfeed_frame_width="230"; 
-rssfeed_frame_height="260"; 
-rssfeed_scroll="on"; 
-rssfeed_scroll_step="6"; 
-rssfeed_scroll_bar="off"; 
-rssfeed_target="_blank"; 
-rssfeed_font_size="12"; 
-rssfeed_font_face=""; 
-rssfeed_border="on"; 
-rssfeed_css_url=""; 
-rssfeed_title="on"; 
-rssfeed_title_name=""; 
-rssfeed_title_bgcolor="#3366ff"; 
-rssfeed_title_color="#fff"; 
-rssfeed_title_bgimage=""; 
-rssfeed_footer="off"; 
-rssfeed_footer_name="rss feed"; 
-rssfeed_footer_bgcolor="#fff"; 
-rssfeed_footer_color="#333"; 
-rssfeed_footer_bgimage=""; 
-rssfeed_item_title_length="50"; 
-rssfeed_item_title_color="#666"; 
-rssfeed_item_bgcolor="#fff"; 
-rssfeed_item_bgimage=""; 
-rssfeed_item_border_bottom="on"; 
-rssfeed_item_source_icon="off"; 
-rssfeed_item_date="off"; 
-rssfeed_item_description="on"; 
-rssfeed_item_description_length="120"; 
-rssfeed_item_description_color="#666"; 
-rssfeed_item_description_link_color="#333"; 
-rssfeed_item_description_tag="off"; 
-rssfeed_no_items="0"; 
-rssfeed_cache = "080375e76eb4c84b44d33ce6f262890f"; 
-
-</script> 
-<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
-<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-<div style="color:#ccc;font-size:10px; text-align:right; width:230px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div> 
-<!-- end sw-rss-feed code -->
-   
-  
- 
 
 
 </div>
- </div>
 
 </body>
   <script src = "main.js"></script>

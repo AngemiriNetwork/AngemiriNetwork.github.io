@@ -11,68 +11,30 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+ // new slideshow JS //
+ //emily//
 
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+ var slideIndex = [1,1];
+ var slideId = ["mySlides1", "mySlides2"]
+ showSlides(1, 0);
+ showSlides(1, 1);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+ function plusSlides(n, no) {
+   showSlides(slideIndex[no] += n, no);
+ }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-//no.2
-
-var slideIndex = 2;
-showSlides1(slideIndex);
-
-function plusSlides1(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide1(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides1(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides1");
-  var dots = document.getElementsByClassName("dot1");
-  if (n > slides.length) {slideIndex = 2}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots1.length; i++) {
-      dots[i].className = dots1[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-
-
-
-
+ function showSlides(n, no) {
+   var i;
+   var x = document.getElementsByClassName(slideId[no]);
+   if (n > x.length) {slideIndex[no] = 1}
+   if (n < 1) {slideIndex[no] = x.length}
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   x[slideIndex[no]-1].style.display = "block";
+ }
 
 
 function randomlogo()
