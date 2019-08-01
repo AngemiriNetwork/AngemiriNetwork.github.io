@@ -331,7 +331,7 @@ img {vertical-align: middle;}
 }
 
 #name {
-  flex: 0 0 48%;
+  flex: 0 0 50%;
   color: black;
   border-radius: 0px;
   font-size: 35px;
@@ -360,7 +360,7 @@ h1{
 
 
 #menu {
-  flex: 0 0 10%;
+  flex: 0 0 5%;
   color: black;
   width: 10px;
   height: 40px;
