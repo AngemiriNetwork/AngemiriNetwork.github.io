@@ -331,7 +331,7 @@ img {vertical-align: middle;}
 }
 
 #name {
-  flex: 0 0 45%;
+  flex: 0 0 48%;
   color: black;
   border-radius: :25px;
   font-size: 40px;
@@ -394,7 +394,7 @@ h1{
   border: none;
   border-color:none;
   width: 20px;
-  height: 300px;
+  height: auto;
   font-weight: bold;
   margin-right: 5px;
 }
